@@ -5,9 +5,16 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-modak: var(--font-modak);
+  
+  --color-cupid-pink: #FF4D94;
+  --color-cupid-magenta: #F368E0;
+  --color-cupid-light-pink: #FF8DC7;
 }
 
 :root {
   --background: #ffffff;
-  --foreground: #0f172a;
+  --foreground: #1a1a1a;
+  --cupid-pink: #FF4D94;
+  --cupid-magenta: #F368E0;
 }

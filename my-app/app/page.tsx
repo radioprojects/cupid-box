@@ -162,15 +162,11 @@ export default function Home() {
                   className="w-full px-6 py-4 rounded-2xl bg-white/20 border border-white/30 text-white placeholder-white/60 focus:outline-none focus:border-white focus:ring-1 focus:ring-white transition-colors backdrop-blur-sm"
                   required
                 />
-                <div className="relative">
-                  <span className="absolute left-5 top-1/2 -translate-y-1/2 text-white/60 font-bold leading-none mt-px">@</span>
-                  <input
-                    type="text"
-                    placeholder="instagram_handle"
-                    className="w-full pl-9 pr-6 py-4 rounded-2xl bg-white/20 border border-white/30 text-white placeholder-white/60 focus:outline-none focus:border-white focus:ring-1 focus:ring-white transition-colors backdrop-blur-sm"
-                    required
-                  />
-                </div>
+                <input
+                  type="text"
+                  placeholder="@instagram_handle (optional)"
+                  className="w-full px-6 py-4 rounded-2xl bg-white/20 border border-white/30 text-white placeholder-white/60 focus:outline-none focus:border-white focus:ring-1 focus:ring-white transition-colors backdrop-blur-sm"
+                />
                 <button type="submit" className="w-full px-8 py-4 mt-1 rounded-2xl bg-white text-[#F75EBD] font-bold hover:bg-white/90 transition-all duration-300 shadow-lg shadow-black/10 hover:shadow-xl hover:scale-105 active:scale-95">
                   Join Waitlist
                 </button>

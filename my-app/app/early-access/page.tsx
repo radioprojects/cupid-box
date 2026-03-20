@@ -68,15 +68,11 @@ export default function EarlyAccess() {
               className="w-full px-6 py-4 rounded-2xl bg-white border border-slate-200 text-slate-800 placeholder-slate-400 focus:outline-none focus:border-[#F75EBD] focus:ring-1 focus:ring-[#F75EBD] transition-all shadow-sm"
               required
             />
-            <div className="relative">
-              <span className="absolute left-5 top-1/2 -translate-y-1/2 text-slate-400 font-bold leading-none mt-px">@</span>
-              <input
-                type="text"
-                placeholder="instagram_handle"
-                className="w-full pl-9 pr-6 py-4 rounded-2xl bg-white border border-slate-200 text-slate-800 placeholder-slate-400 focus:outline-none focus:border-[#F75EBD] focus:ring-1 focus:ring-[#F75EBD] transition-all shadow-sm"
-                required
-              />
-            </div>
+            <input
+              type="text"
+              placeholder="@instagram_handle (optional)"
+              className="w-full px-6 py-4 rounded-2xl bg-white border border-slate-200 text-slate-800 placeholder-slate-400 focus:outline-none focus:border-[#F75EBD] focus:ring-1 focus:ring-[#F75EBD] transition-all shadow-sm"
+            />
             <button type="submit" className="w-full px-8 py-4 mt-2 rounded-2xl bg-gradient-to-r from-[#F75EBD] to-[#FF69FF] text-white font-bold text-lg hover:shadow-xl hover:shadow-[#F75EBD]/30 transition-all hover:-translate-y-0.5 active:scale-95 group flex items-center justify-center gap-2">
               Join Waitlist
               <span className="group-hover:translate-x-1 transition-transform">→</span>

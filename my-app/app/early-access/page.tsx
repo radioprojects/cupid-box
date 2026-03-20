@@ -4,6 +4,7 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
+import { joinWaitlist } from '../actions';
 
 export default function EarlyAccess() {
   const router = useRouter();
@@ -55,21 +56,24 @@ export default function EarlyAccess() {
             We're currently letting in new members slowly to ensure the highest quality matches. Join the waitlist to secure your spot now.
           </p>
 
-          <form className="flex flex-col gap-4 max-w-sm mx-auto relative z-10" onSubmit={e => { e.preventDefault(); router.push('/waitlist-success'); }}>
+          <form className="flex flex-col gap-4 max-w-sm mx-auto relative z-10" action={joinWaitlist}>
             <input
               type="text"
+              name="name"
               placeholder="Your Name"
               className="w-full px-6 py-4 rounded-2xl bg-white border border-slate-200 text-slate-800 placeholder-slate-400 focus:outline-none focus:border-[#F75EBD] focus:ring-1 focus:ring-[#F75EBD] transition-all shadow-sm"
               required
             />
             <input
               type="email"
+              name="email"
               placeholder="Your Email"
               className="w-full px-6 py-4 rounded-2xl bg-white border border-slate-200 text-slate-800 placeholder-slate-400 focus:outline-none focus:border-[#F75EBD] focus:ring-1 focus:ring-[#F75EBD] transition-all shadow-sm"
               required
             />
             <input
               type="text"
+              name="instagram"
               placeholder="@instagram_handle (optional)"
               className="w-full px-6 py-4 rounded-2xl bg-white border border-slate-200 text-slate-800 placeholder-slate-400 focus:outline-none focus:border-[#F75EBD] focus:ring-1 focus:ring-[#F75EBD] transition-all shadow-sm"
             />

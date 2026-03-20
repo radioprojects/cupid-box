@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { joinWaitlist } from './actions';
 
 export default function Home() {
   return (
@@ -149,21 +150,24 @@ export default function Home() {
               <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-6 relative z-10 tracking-tight">Ready to find your person?</h2>
               <p className="text-white/80 text-xl max-w-xl mx-auto mb-10 relative z-10">Join our exclusive waitlist today and be among the first to experience CupidBox.</p>
 
-              <form action="/waitlist-success" className="flex flex-col gap-3 max-w-md mx-auto relative z-10">
+              <form action={joinWaitlist} className="flex flex-col gap-3 max-w-md mx-auto relative z-10">
                 <input
                   type="text"
+                  name="name"
                   placeholder="Your Name"
                   className="w-full px-6 py-4 rounded-2xl bg-white/20 border border-white/30 text-white placeholder-white/60 focus:outline-none focus:border-white focus:ring-1 focus:ring-white transition-colors backdrop-blur-sm"
                   required
                 />
                 <input
                   type="email"
+                  name="email"
                   placeholder="Enter your email"
                   className="w-full px-6 py-4 rounded-2xl bg-white/20 border border-white/30 text-white placeholder-white/60 focus:outline-none focus:border-white focus:ring-1 focus:ring-white transition-colors backdrop-blur-sm"
                   required
                 />
                 <input
                   type="text"
+                  name="instagram"
                   placeholder="@instagram_handle (optional)"
                   className="w-full px-6 py-4 rounded-2xl bg-white/20 border border-white/30 text-white placeholder-white/60 focus:outline-none focus:border-white focus:ring-1 focus:ring-white transition-colors backdrop-blur-sm"
                 />

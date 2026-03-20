@@ -67,7 +67,7 @@ export default function HowItWorks() {
   const [openFaq, setOpenFaq] = React.useState<number | null>(null);
 
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-900 font-sans selection:bg-pink-200">
+    <div className="min-h-screen bg-slate-50 text-slate-900 font-sans selection:bg-pink-200 overflow-x-hidden">
       {/* Background decoration - subtle, clean */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
         <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] rounded-full bg-[#F75EBD]/[0.06] blur-[120px]" />
@@ -107,9 +107,9 @@ export default function HowItWorks() {
         <div className="max-w-4xl mx-auto">
 
           {/* Page Header */}
-          <div className="text-center mt-8 md:mt-16 mb-20">
-            <h1 className="animate-on-load animate-fade-in-up text-5xl md:text-7xl tracking-tighter mb-6 leading-[1.1]">
-              <span className="font-extrabold">How </span><span className="text-transparent bg-clip-text bg-gradient-to-r from-[#F75EBD] to-[#FF69FF] font-modak tracking-wide">CupidBox</span><span className="font-extrabold">Works</span>
+          <div className="text-center mt-8 md:mt-16 mb-20 overflow-hidden px-4">
+            <h1 className="animate-on-load animate-fade-in-up text-4xl sm:text-5xl md:text-7xl tracking-tighter mb-6 leading-[1.1] break-words">
+              <span className="font-extrabold">How </span><span className="text-transparent bg-clip-text bg-gradient-to-r from-[#F75EBD] to-[#FF69FF] font-modak tracking-wide inline-block">CupidBox</span> <span className="font-extrabold inline-block">Works</span>
             </h1>
             <p className="animate-on-load animate-fade-in-up delay-200 max-w-2xl mx-auto text-xl text-slate-500 leading-relaxed font-medium">
               Three simple steps from signing up to sitting across from someone who might just change your life.

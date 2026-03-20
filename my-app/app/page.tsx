@@ -34,7 +34,7 @@ export default function Home() {
               How it Works
             </Link>
             <button className="hidden sm:block px-7 py-3 rounded-full bg-gradient-to-r from-[#F75EBD] to-[#FF69FF] text-white font-semibold hover:shadow-lg hover:shadow-[#F75EBD]/30 transition-all hover:scale-105 active:scale-95">
-              Sign In
+              Book Now
             </button>
           </div>
         </div>
@@ -80,9 +80,10 @@ export default function Home() {
             </p>
 
             <div className="animate-on-load animate-fade-in-up delay-600 flex flex-col sm:flex-row gap-5 w-full justify-center max-w-md">
-              <button className="flex-1 px-8 py-4.5 rounded-2xl bg-gradient-to-r from-[#F75EBD] to-[#FF69FF] text-white font-bold text-lg hover:shadow-2xl hover:shadow-[#F75EBD]/40 hover:-translate-y-1 transition-all duration-30000 animate-shimmer bg-[length:200%_100%]" style={{ backgroundImage: 'linear-gradient(110deg, #F75EBD 0%, #FF69FF 45%, #FFB3E6 50%, #FF69FF 55%, #F75EBD 100%)' }}>
+              <button className="flex-1 px-8 py-4.5 rounded-2xl bg-gradient-to-r from-[#F75EBD] to-[#FF69FF] text-white font-bold text-lg hover:shadow-2xl hover:shadow-[#F75EBD]/40 hover:-translate-y-1 transition-all duration-300 animate-shimmer bg-[length:200%_100%]" style={{ backgroundImage: 'linear-gradient(110deg, #F75EBD 0%, #FF69FF 45%, #FFB3E6 50%, #FF69FF 55%, #F75EBD 100%)' }}>
                 Get Matched
               </button>
+
               <Link href="/how-it-works" className="flex-1 px-8 py-4.5 rounded-2xl bg-white border border-slate-200 text-slate-800 font-bold text-lg hover:border-[#F75EBD] hover:bg-[#F75EBD]/5 shadow-sm transition-all duration-300 group flex items-center justify-center gap-2">
                 How it Works
                 <span className="group-hover:translate-x-1 transition-transform">→</span>

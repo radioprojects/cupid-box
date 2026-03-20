@@ -14,7 +14,7 @@ const steps = [
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
       </svg>
     ),
-    color: "from-[#FF9EE2] to-[#F75EBD]",
+    color: "from-[#F75EBD] to-[#FF69FF]",
   },
   {
     number: "02",
@@ -25,7 +25,7 @@ const steps = [
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
       </svg>
     ),
-    color: "from-[#F75EBD] to-[#D43A9A]",
+    color: "from-[#FF69FF] to-[#F75EBD]",
   },
   {
     number: "03",
@@ -36,7 +36,7 @@ const steps = [
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
       </svg>
     ),
-    color: "from-[#D43A9A] to-[#BC4E9C]",
+    color: "from-[#F75EBD] to-[#FF69FF]",
   },
   {
     number: "04",
@@ -48,7 +48,7 @@ const steps = [
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
       </svg>
     ),
-    color: "from-[#BC4E9C] to-[#9B3A7D]",
+    color: "from-[#FF69FF] to-[#F75EBD]",
   },
   {
     number: "05",
@@ -59,7 +59,7 @@ const steps = [
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
       </svg>
     ),
-    color: "from-[#F75EBD] to-[#FF9EE2]",
+    color: "from-[#F75EBD] to-[#FF69FF]",
   },
 ];
 
@@ -91,36 +91,35 @@ export default function HowItWorks() {
 
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900 font-sans selection:bg-pink-200">
-      {/* Background decoration */}
+      {/* Background decoration - subtle, clean */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
-        <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] rounded-full bg-[#F75EBD]/15 blur-[100px]" />
-        <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] rounded-full bg-[#FF9EE2]/15 blur-[100px]" />
-        <div className="absolute top-[50%] left-[50%] w-[30%] h-[30%] rounded-full bg-[#D43A9A]/8 blur-[100px]" />
-        <div className="absolute top-[20%] right-[15%] w-48 h-48 border border-[#F75EBD]/8 rounded-full animate-spin-slow" />
+        <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] rounded-full bg-[#F75EBD]/[0.06] blur-[120px]" />
+        <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] rounded-full bg-[#FF69FF]/[0.05] blur-[120px]" />
+        {/* Decorative spinning ring */}
+        <div className="absolute top-[15%] right-[10%] w-64 h-64 border border-[#F75EBD]/[0.06] rounded-full animate-spin-slow" />
+        <div className="absolute bottom-[20%] left-[5%] w-40 h-40 border border-[#FF69FF]/[0.06] rounded-full animate-spin-slow" style={{ animationDirection: 'reverse' }} />
       </div>
 
       {/* Navigation */}
       <nav className="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl border-b border-slate-200/50 animate-fade-in-down">
         <div className="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-3 group">
-            <div className="w-12 h-12 rounded-2xl bg-gradient-to-tr from-[#F75EBD] to-[#FF9EE2] flex items-center justify-center shadow-lg shadow-[#F75EBD]/20 transform rotate-[-5deg] group-hover:rotate-0 transition-transform cursor-pointer p-2">
-              <Image
-                src="/cupidbox-logo.svg"
-                alt="CupidBox Logo"
-                width={32}
-                height={32}
-                className="w-full h-full invert brightness-200"
-              />
-            </div>
-            <span className="font-modak text-3xl bg-clip-text text-transparent bg-gradient-to-r from-[#D43A9A] to-[#F75EBD] tracking-wide">
+          <Link href="/" className="flex items-center gap-2.5 group">
+            <Image
+              src="/cupidbox-logo.svg"
+              alt="CupidBox Logo"
+              width={36}
+              height={36}
+              className="w-9 h-9 group-hover:scale-110 transition-transform duration-300"
+            />
+            <span className="font-modak text-3xl bg-clip-text text-transparent bg-gradient-to-r from-[#F75EBD] to-[#FF69FF] tracking-wide">
               CupidBox
             </span>
           </Link>
           <div className="flex items-center gap-4">
-            <Link href="/how-it-works" className="hidden sm:block text-[#F75EBD] font-semibold">
+            <Link href="/how-it-works" className="hidden sm:block text-[#F75EBD] font-semibold transition-colors">
               How it Works
             </Link>
-            <button className="hidden sm:block px-7 py-3 rounded-full bg-gradient-to-r from-[#D43A9A] to-[#F75EBD] text-white font-semibold hover:shadow-lg hover:shadow-[#F75EBD]/30 transition-all hover:scale-105 active:scale-95">
+            <button className="hidden sm:block px-7 py-3 rounded-full bg-gradient-to-r from-[#F75EBD] to-[#FF69FF] text-white font-semibold hover:shadow-lg hover:shadow-[#F75EBD]/30 transition-all hover:scale-105 active:scale-95">
               Sign In
             </button>
           </div>
@@ -129,17 +128,18 @@ export default function HowItWorks() {
 
       <main className="relative z-10 pt-32 pb-24 px-6">
         <div className="max-w-5xl mx-auto">
-          
+
           {/* Page Header */}
           <div className="text-center mt-8 md:mt-16 mb-20">
-            <div className="animate-fade-in-scale inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#F75EBD]/10 text-[#D43A9A] font-semibold text-sm mb-8 border border-[#F75EBD]/20">
+            {/* <div className="animate-fade-in-scale inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#F75EBD]/10 text-[#F75EBD] font-semibold text-sm mb-8 border border-[#F75EBD]/20">
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
               The CupidBox Process
-            </div>
-            <h1 className="animate-on-load animate-fade-in-up text-5xl md:text-7xl font-black tracking-tighter mb-6 leading-[1.1]">
-              How <span className="font-modak text-transparent bg-clip-text bg-gradient-to-r from-[#F75EBD] to-[#D43A9A] tracking-wide">CupidBox</span> Works
+            </div> */}
+
+            <h1 className="animate-on-load animate-fade-in-up text-5xl md:text-7xl tracking-tighter mb-6 leading-[1.1]">
+              <span className="font-extrabold">How </span><span className="text-transparent bg-clip-text bg-gradient-to-r from-[#F75EBD] to-[#FF69FF] font-modak tracking-wide">CupidBox</span><span className="font-extrabold">Works</span>
             </h1>
             <p className="animate-on-load animate-fade-in-up delay-200 max-w-2xl mx-auto text-xl text-slate-500 leading-relaxed font-medium">
               Five simple steps from signing up to sitting across from someone who might just change your life.
@@ -149,8 +149,8 @@ export default function HowItWorks() {
           {/* Steps Timeline */}
           <div className="relative">
             {/* Vertical line connector */}
-            <div className="absolute left-[2.25rem] md:left-1/2 top-0 bottom-0 w-[2px] bg-gradient-to-b from-[#F75EBD]/30 via-[#D43A9A]/20 to-[#BC4E9C]/30 hidden md:block" />
-            <div className="absolute left-[2.25rem] top-0 bottom-0 w-[2px] bg-gradient-to-b from-[#F75EBD]/30 via-[#D43A9A]/20 to-[#BC4E9C]/30 md:hidden" />
+            <div className="absolute left-[2.25rem] md:left-1/2 top-0 bottom-0 w-[2px] bg-gradient-to-b from-[#F75EBD]/30 via-[#FF69FF]/20 to-[#F75EBD]/30 hidden md:block" />
+            <div className="absolute left-[2.25rem] top-0 bottom-0 w-[2px] bg-gradient-to-b from-[#F75EBD]/30 via-[#FF69FF]/20 to-[#F75EBD]/30 md:hidden" />
 
             {steps.map((step, i) => (
               <div
@@ -185,7 +185,7 @@ export default function HowItWorks() {
           {/* Why CupidBox Section */}
           <div className="mt-32 text-center">
             <h2 className="animate-on-load animate-fade-in-up text-4xl md:text-5xl font-extrabold tracking-tight mb-16">
-              Why People <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#F75EBD] to-[#D43A9A]">Love</span> CupidBox
+              Why People <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#F75EBD] to-[#FF69FF]">Love</span> CupidBox
             </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               {[
@@ -210,7 +210,7 @@ export default function HowItWorks() {
           {/* FAQ Section */}
           <div className="mt-32 max-w-3xl mx-auto">
             <h2 className="animate-on-load animate-fade-in-up text-4xl md:text-5xl font-extrabold tracking-tight mb-4 text-center">
-              Frequently Asked <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#F75EBD] to-[#D43A9A]">Questions</span>
+              Frequently Asked <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#F75EBD] to-[#FF69FF]">Questions</span>
             </h2>
             <p className="text-slate-500 text-center mb-12 text-lg font-medium">Everything you need to know before you get started.</p>
 
@@ -242,24 +242,26 @@ export default function HowItWorks() {
 
           {/* CTA Section */}
           <div className="mt-32 flex justify-center">
-            <div className="relative overflow-hidden rounded-[3rem] bg-slate-900 border border-slate-800 w-full max-w-4xl p-12 md:p-20 text-center group">
-              <div className="absolute top-0 right-0 w-[40%] h-full bg-gradient-to-l from-[#F75EBD]/20 to-transparent pointer-events-none group-hover:from-[#F75EBD]/30 transition-all duration-700" />
-              <div className="absolute bottom-0 left-0 w-[40%] h-full bg-gradient-to-r from-[#D43A9A]/20 to-transparent pointer-events-none group-hover:from-[#D43A9A]/30 transition-all duration-700" />
+            <div className="relative overflow-hidden rounded-[3rem] bg-gradient-to-br from-[#F75EBD] to-[#FF69FF] w-full max-w-4xl p-12 md:p-20 text-center group">
+              <div className="absolute top-0 right-0 w-[40%] h-full bg-gradient-to-l from-white/10 to-transparent pointer-events-none"></div>
+              <div className="absolute bottom-0 left-0 w-[40%] h-full bg-gradient-to-r from-white/10 to-transparent pointer-events-none"></div>
 
-              <div className="absolute top-8 right-16 w-4 h-4 rounded-full bg-[#F75EBD]/20 animate-bounce-gentle" />
-              <div className="absolute bottom-12 left-20 w-3 h-3 rounded-full bg-[#FF9EE2]/30 animate-bounce-gentle delay-300" />
-              
+              {/* Floating particles */}
+              <div className="absolute top-6 right-12 w-4 h-4 rounded-full bg-white/20 animate-bounce-gentle" />
+              <div className="absolute bottom-10 left-16 w-3 h-3 rounded-full bg-white/15 animate-bounce-gentle delay-300" />
+              <div className="absolute top-1/2 right-1/4 w-2 h-2 rounded-full bg-white/20 animate-bounce-gentle delay-500" />
+
               <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-6 relative z-10 tracking-tight">
                 Convinced? Let&apos;s go.
               </h2>
-              <p className="text-slate-400 text-xl max-w-xl mx-auto mb-10 relative z-10">
+              <p className="text-white/80 text-xl max-w-xl mx-auto mb-10 relative z-10">
                 Take the first step toward meeting someone incredible. No swiping required.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center relative z-10">
-                <Link href="/" className="px-10 py-4 rounded-2xl bg-[#F75EBD] text-white font-bold text-lg hover:bg-[#D43A9A] transition-all duration-300 shadow-lg shadow-[#F75EBD]/20 hover:shadow-xl hover:shadow-[#F75EBD]/30 hover:scale-105 active:scale-95">
+                <Link href="/" className="px-10 py-4 rounded-2xl bg-white text-[#F75EBD] font-bold text-lg hover:bg-white/90 transition-all duration-300 shadow-lg shadow-black/10 hover:shadow-xl hover:scale-105 active:scale-95">
                   Get Started
                 </Link>
-                <Link href="/" className="px-10 py-4 rounded-2xl border border-slate-700 text-slate-300 font-bold text-lg hover:border-[#F75EBD] hover:text-white transition-all duration-300 flex items-center justify-center gap-2 group/btn">
+                <Link href="/" className="px-10 py-4 rounded-2xl border border-white/50 text-white font-bold text-lg hover:border-white hover:bg-white/10 transition-all duration-300 flex items-center justify-center gap-2 group/btn">
                   ← Back to Home
                 </Link>
               </div>
@@ -272,24 +274,22 @@ export default function HowItWorks() {
       <footer className="border-t border-slate-200/60 bg-white/50 backdrop-blur-md relative z-10">
         <div className="max-w-6xl mx-auto px-6 py-12 flex flex-col md:flex-row justify-between items-center gap-6">
           <Link href="/" className="flex items-center gap-2 group">
-            <div className="w-8 h-8 rounded-lg bg-gradient-to-tr from-[#F75EBD] to-[#D43A9A] flex items-center justify-center p-1.5 group-hover:rotate-6 transition-transform">
-              <Image
-                src="/cupidbox-logo.svg"
-                alt="CupidBox Logo"
-                width={20}
-                height={20}
-                className="w-full h-full invert brightness-200"
-              />
-            </div>
-            <span className="font-modak text-xl text-transparent bg-clip-text bg-gradient-to-r from-[#D43A9A] to-[#F75EBD]">CupidBox</span>
+            <Image
+              src="/cupidbox-logo.svg"
+              alt="CupidBox Logo"
+              width={24}
+              height={24}
+              className="w-6 h-6 group-hover:scale-110 transition-transform"
+            />
+            <span className="font-modak text-xl text-transparent bg-clip-text bg-gradient-to-r from-[#F75EBD] to-[#FF69FF]">CupidBox</span>
           </Link>
           <div className="text-slate-500 font-medium text-sm text-center md:text-left">
             © {new Date().getFullYear()} CupidBox. All rights reserved.
           </div>
           <div className="flex gap-6">
-            <a href="#" className="text-slate-400 hover:text-[#F75EBD] transition-colors">Twitter</a>
-            <a href="#" className="text-slate-400 hover:text-[#F75EBD] transition-colors">Instagram</a>
-            <a href="#" className="text-slate-400 hover:text-[#F75EBD] transition-colors">Contact</a>
+            <a href="#" className="text-slate-400 hover:text-[#F75EBD] transition-colors hover:-translate-y-0.5 duration-300">Twitter</a>
+            <a href="#" className="text-slate-400 hover:text-[#F75EBD] transition-colors hover:-translate-y-0.5 duration-300">Instagram</a>
+            <a href="#" className="text-slate-400 hover:text-[#F75EBD] transition-colors hover:-translate-y-0.5 duration-300">Contact</a>
           </div>
         </div>
       </footer>

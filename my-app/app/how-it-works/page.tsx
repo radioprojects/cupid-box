@@ -119,9 +119,9 @@ export default function HowItWorks() {
             <Link href="/how-it-works" className="hidden sm:block text-[#F75EBD] font-semibold transition-colors">
               How it Works
             </Link>
-            <button className="hidden sm:block px-7 py-3 rounded-full bg-gradient-to-r from-[#F75EBD] to-[#FF69FF] text-white font-semibold hover:shadow-lg hover:shadow-[#F75EBD]/30 transition-all hover:scale-105 active:scale-95">
-              Sign In
-            </button>
+            <Link href="/early-access" className="hidden sm:block px-7 py-3 rounded-full bg-gradient-to-r from-[#F75EBD] to-[#FF69FF] text-white font-semibold hover:shadow-lg hover:shadow-[#F75EBD]/30 transition-all hover:scale-105 active:scale-95">
+              Book Now
+            </Link>
           </div>
         </div>
       </nav>
@@ -258,7 +258,7 @@ export default function HowItWorks() {
                 Take the first step toward meeting someone incredible. No swiping required.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center relative z-10">
-                <Link href="/" className="px-10 py-4 rounded-2xl bg-white text-[#F75EBD] font-bold text-lg hover:bg-white/90 transition-all duration-300 shadow-lg shadow-black/10 hover:shadow-xl hover:scale-105 active:scale-95">
+                <Link href="/early-access" className="px-10 py-4 rounded-2xl bg-white text-[#F75EBD] font-bold text-lg hover:bg-white/90 transition-all duration-300 shadow-lg shadow-black/10 hover:shadow-xl hover:scale-105 active:scale-95 flex items-center justify-center">
                   Get Started
                 </Link>
                 <Link href="/" className="px-10 py-4 rounded-2xl border border-white/50 text-white font-bold text-lg hover:border-white hover:bg-white/10 transition-all duration-300 flex items-center justify-center gap-2 group/btn">

@@ -33,9 +33,9 @@ export default function Home() {
             <Link href="/how-it-works" className="hidden sm:block text-slate-600 font-semibold hover:text-[#F75EBD] transition-colors">
               How it Works
             </Link>
-            <button className="hidden sm:block px-7 py-3 rounded-full bg-gradient-to-r from-[#F75EBD] to-[#FF69FF] text-white font-semibold hover:shadow-lg hover:shadow-[#F75EBD]/30 transition-all hover:scale-105 active:scale-95">
+            <Link href="/early-access" className="hidden sm:block px-7 py-3 rounded-full bg-gradient-to-r from-[#F75EBD] to-[#FF69FF] text-white font-semibold hover:shadow-lg hover:shadow-[#F75EBD]/30 transition-all hover:scale-105 active:scale-95">
               Book Now
-            </button>
+            </Link>
           </div>
         </div>
       </nav>
@@ -80,9 +80,9 @@ export default function Home() {
             </p>
 
             <div className="animate-on-load animate-fade-in-up delay-600 flex flex-col sm:flex-row gap-5 w-full justify-center max-w-md">
-              <button className="flex-1 px-8 py-4.5 rounded-2xl bg-gradient-to-r from-[#F75EBD] to-[#FF69FF] text-white font-bold text-lg hover:shadow-2xl hover:shadow-[#F75EBD]/40 hover:-translate-y-1 transition-all duration-300 animate-shimmer bg-[length:200%_100%]" style={{ backgroundImage: 'linear-gradient(110deg, #F75EBD 0%, #FF69FF 45%, #FFB3E6 50%, #FF69FF 55%, #F75EBD 100%)' }}>
+              <Link href="/early-access" className="flex flex-1 items-center justify-center px-8 py-4.5 rounded-2xl bg-gradient-to-r from-[#F75EBD] to-[#FF69FF] text-white font-bold text-lg hover:shadow-2xl hover:shadow-[#F75EBD]/40 hover:-translate-y-1 transition-all duration-300 animate-shimmer bg-[length:200%_100%] text-center" style={{ backgroundImage: 'linear-gradient(110deg, #F75EBD 0%, #FF69FF 45%, #FFB3E6 50%, #FF69FF 55%, #F75EBD 100%)' }}>
                 Get Matched
-              </button>
+              </Link>
 
               <Link href="/how-it-works" className="flex-1 px-8 py-4.5 rounded-2xl bg-white border border-slate-200 text-slate-800 font-bold text-lg hover:border-[#F75EBD] hover:bg-[#F75EBD]/5 shadow-sm transition-all duration-300 group flex items-center justify-center gap-2">
                 How it Works
@@ -149,16 +149,34 @@ export default function Home() {
               <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-6 relative z-10 tracking-tight">Ready to find your person?</h2>
               <p className="text-white/80 text-xl max-w-xl mx-auto mb-10 relative z-10">Join our exclusive waitlist today and be among the first to experience CupidBox.</p>
 
-              <form className="flex flex-col sm:flex-row gap-3 max-w-lg mx-auto relative z-10">
+              <form action="/waitlist-success" className="flex flex-col gap-3 max-w-md mx-auto relative z-10">
+                <input
+                  type="text"
+                  placeholder="Your Name"
+                  className="w-full px-6 py-4 rounded-2xl bg-white/20 border border-white/30 text-white placeholder-white/60 focus:outline-none focus:border-white focus:ring-1 focus:ring-white transition-colors backdrop-blur-sm"
+                  required
+                />
                 <input
                   type="email"
                   placeholder="Enter your email"
-                  className="flex-1 px-6 py-4 rounded-2xl bg-white/20 border border-white/30 text-white placeholder-white/60 focus:outline-none focus:border-white focus:ring-1 focus:ring-white transition-colors backdrop-blur-sm"
+                  className="w-full px-6 py-4 rounded-2xl bg-white/20 border border-white/30 text-white placeholder-white/60 focus:outline-none focus:border-white focus:ring-1 focus:ring-white transition-colors backdrop-blur-sm"
                   required
                 />
-                <button type="submit" className="px-8 py-4 rounded-2xl bg-white text-[#F75EBD] font-bold hover:bg-white/90 transition-all duration-300 shadow-lg shadow-black/10 hover:shadow-xl hover:scale-105 active:scale-95">
+                <div className="relative">
+                  <span className="absolute left-5 top-1/2 -translate-y-1/2 text-white/60 font-bold leading-none mt-px">@</span>
+                  <input
+                    type="text"
+                    placeholder="instagram_handle"
+                    className="w-full pl-9 pr-6 py-4 rounded-2xl bg-white/20 border border-white/30 text-white placeholder-white/60 focus:outline-none focus:border-white focus:ring-1 focus:ring-white transition-colors backdrop-blur-sm"
+                    required
+                  />
+                </div>
+                <button type="submit" className="w-full px-8 py-4 mt-1 rounded-2xl bg-white text-[#F75EBD] font-bold hover:bg-white/90 transition-all duration-300 shadow-lg shadow-black/10 hover:shadow-xl hover:scale-105 active:scale-95">
                   Join Waitlist
                 </button>
+                <p className="text-sm text-white/80 mt-2 font-medium">
+                  Follow us on <a href="https://instagram.com/cupidbox.love" target="_blank" rel="noopener noreferrer" className="text-white font-bold hover:text-[#F75EBD] underline transition-colors">Instagram @cupidbox.love</a> for updates!
+                </p>
               </form>
             </div>
           </div>

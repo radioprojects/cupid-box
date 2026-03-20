@@ -196,9 +196,7 @@ export default function Home() {
             © {new Date().getFullYear()} CupidBox. All rights reserved.
           </div>
           <div className="flex gap-6">
-            <a href="#" className="text-slate-400 hover:text-[#F75EBD] transition-colors hover:-translate-y-0.5 duration-300">Twitter</a>
-            <a href="#" className="text-slate-400 hover:text-[#F75EBD] transition-colors hover:-translate-y-0.5 duration-300">Instagram</a>
-            <a href="#" className="text-slate-400 hover:text-[#F75EBD] transition-colors hover:-translate-y-0.5 duration-300">Contact</a>
+            <a href="https://instagram.com/cupidbox.love" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-[#F75EBD] transition-colors hover:-translate-y-0.5 duration-300">Contact Us (Instagram)</a>
           </div>
         </div>
       </footer>

@@ -10,7 +10,7 @@ export default function EarlyAccess() {
   const router = useRouter();
 
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-900 font-sans selection:bg-pink-200 flex flex-col items-center justify-center relative overflow-hidden">
+    <div className="min-h-screen bg-slate-50 text-slate-900 font-sans selection:bg-pink-200 flex flex-col items-center justify-center relative overflow-x-hidden">
       {/* Background decoration */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
         <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] rounded-full bg-[#F75EBD]/[0.06] blur-[120px]" />
@@ -32,14 +32,14 @@ export default function EarlyAccess() {
               CupidBox
             </span>
           </Link>
-          <Link href="/" className="text-slate-600 font-semibold hover:text-[#F75EBD] transition-colors flex items-center gap-2">
-            ← Back home
+          <Link href="/" className="text-sm sm:text-base text-slate-600 font-semibold hover:text-[#F75EBD] transition-colors flex items-center gap-1 sm:gap-2">
+            ← <span className="hidden sm:inline">Back home</span><span className="sm:hidden">Back</span>
           </Link>
         </div>
       </nav>
 
-      <main className="relative z-10 p-6 w-full max-w-2xl mt-16 md:mt-24">
-        <div className="bg-white/80 backdrop-blur-md rounded-[3rem] p-10 md:p-16 border border-slate-100 shadow-xl text-center relative overflow-hidden group">
+      <main className="relative z-10 px-4 py-8 sm:p-6 w-full max-w-2xl mt-16 md:mt-24">
+        <div className="bg-white/80 backdrop-blur-md rounded-[2rem] sm:rounded-[3rem] p-6 sm:p-10 md:p-16 border border-slate-100 shadow-xl text-center relative overflow-hidden group">
           <div className="absolute top-0 right-0 w-[40%] h-[40%] bg-gradient-to-bl from-[#F75EBD]/10 to-transparent pointer-events-none rounded-bl-full" />
           <div className="absolute bottom-0 left-0 w-[40%] h-[40%] bg-gradient-to-tr from-[#FF69FF]/10 to-transparent pointer-events-none rounded-tr-full" />
 
@@ -49,10 +49,10 @@ export default function EarlyAccess() {
             </svg>
           </div>
           
-          <h1 className="text-4xl md:text-5xl font-black tracking-tight mb-4 text-slate-800">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight mb-4 text-slate-800">
             Early Access
           </h1>
-          <p className="text-lg text-slate-500 mb-10 font-medium">
+          <p className="text-base sm:text-lg text-slate-500 mb-8 sm:mb-10 font-medium">
             We're currently letting in new members slowly to ensure the highest quality matches. Join the waitlist to secure your spot now.
           </p>
 

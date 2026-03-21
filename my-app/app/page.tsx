@@ -77,7 +77,7 @@ export default function Home() {
             </h1>
 
             <p className="animate-on-load animate-fade-in-up delay-400 max-w-2xl text-xl text-slate-500 mb-14 leading-relaxed font-medium">
-              CupidBox takes the guesswork out of modern dating. Answer a few questions, and our human matchmakers will set you up on a curated blind date. No swiping, just genuine connections.
+              CupidBox takes the guesswork out of modern dating. Answer a few questions, and our human matchmakers will set you up on a surprise blind date. No swiping, just genuine connections.
             </p>
 
             <div className="animate-on-load animate-fade-in-up delay-600 flex flex-col sm:flex-row gap-5 w-full justify-center max-w-md">
@@ -97,7 +97,7 @@ export default function Home() {
             {[
               {
                 title: "No Profiles, No Browsing",
-                desc: "Connect based on personality and mutual goals. We hide all superficial details until the date is set.",
+                desc: "We hide all superficial details until the date is set.",
                 icon: (
                   <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l3.59 3.59m0 0A9.953 9.953 0 0112 5c4.478 0 8.268 2.943 9.543 7a10.025 10.025 0 01-4.132 5.411m0 0L21 21" />
@@ -106,8 +106,8 @@ export default function Home() {
                 delay: "delay-100"
               },
               {
-                title: "Hand-Picked Matches",
-                desc: "Every single match is curated by our dedicated matchmaking team to ensure highest compatibility.",
+                title: "Safe and Verified",
+                desc: "We make sure your date is verified and genuine by asking for ID verification.",
                 icon: (
                   <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />

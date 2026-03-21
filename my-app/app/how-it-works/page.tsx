@@ -8,7 +8,7 @@ const steps = [
   {
     number: "01",
     title: "Sign Up & Tell Us About You",
-    description: "Create your CupidBox profile by answering our curated personality questionnaire. Our human matchmakers carefully review your goals to find someone who complements you.",
+    description: "After completing registration, create your CupidBox profile by answering our curated personality questionnaire to find someone who complements you.",
     icon: (
       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
@@ -43,11 +43,11 @@ const steps = [
 const faqs = [
   {
     q: "Is CupidBox free?",
-    a: "Our basic plan is free and includes one curated match per month. Premium members get priority matching, more frequent dates, and access to exclusive events."
+    a: "You book a date with your match for a fixed price for different teir including movie date, dinner date, etc. This includes the curated venue and the date experience,"
   },
   {
     q: "How is this different from dating apps?",
-    a: "No swiping, no endless browsing, no photo-first impressions. CupidBox uses real human matchmakers who understand nuance, chemistry, and what makes relationships actually work."
+    a: "No swiping, no endless browsing, no photo-first impressions. It's an expirience to book a date with a stranger and feel the thrill of surprise & connection"
   },
   {
     q: "What if I don't like my match?",
@@ -58,9 +58,17 @@ const faqs = [
     a: "Most members receive their first match within 1-2 weeks of completing their profile. We take time to find the right person — no rushing."
   },
   {
-    q: "What cities is CupidBox available in?",
-    a: "We're currently live in 50+ cities across India and expanding fast. If we're not in your city yet, join the waitlist and we'll notify you when we arrive."
+    q: "What if I or my date doesn't arrive?",
+    a: "if your date doesn't arrive we give you full refund or a free date, if you can't reach for some reason we give you a 50% refund, if your date is late by more than 30 minutes you are eligible to cancel the date and ask for a refund no questions asked"
   },
+  {
+    q: "When does booking start?",
+    a: "We are currently accepting early access members! Official bookings and match sequencing will start as soon as we properly launch in your city. Join the waitlist to be notified first."
+  },
+  {
+    q: "Is this safe?",
+    a: "Safety is our top priority. We ensure that every date is verified by securely asking for ID verification, and all dates are curated in safe, highly-rated public environments. We are also present at the venue to ensure the safety of our customers"
+  }
 ];
 
 export default function HowItWorks() {
@@ -186,7 +194,7 @@ export default function HowItWorks() {
                 Convinced? Let&apos;s go.
               </h2>
               <p className="text-white/80 text-xl max-w-xl mx-auto mb-10 relative z-10">
-                Take the first step toward meeting someone incredible. No swiping required.
+                Have more Questions? Reach out to us at <Link href="https://www.instagram.com/cupidbox.love" className="text-white underline">@cupidbox.love</Link> on instagram
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center relative z-10">
                 <Link href="/early-access" className="px-10 py-4 rounded-2xl bg-white text-[#F75EBD] font-bold text-lg hover:bg-white/90 transition-all duration-300 shadow-lg shadow-black/10 hover:shadow-xl hover:scale-105 active:scale-95 flex items-center justify-center">

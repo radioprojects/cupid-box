@@ -21,6 +21,12 @@ const modak = Modak({
 export const metadata: Metadata = {
   title: "CupidBox - Love is Blind, We Make the Intro",
   description: "Curated blind dates by human matchmakers. No swiping, just genuine connections.",
+  icons: {
+    icon: [
+      { url: '/cupidbox-logo.svg', type: 'image/svg+xml' },
+      { url: '/favicon.ico' }
+    ]
+  }
 };
 
 export default function RootLayout({

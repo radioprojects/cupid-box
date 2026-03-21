@@ -23,8 +23,8 @@ export const metadata: Metadata = {
   description: "Curated blind dates by human matchmakers. No swiping, just genuine connections.",
   icons: {
     icon: [
-      { url: '/cupidbox-logo.svg', type: 'image/svg+xml' },
-      { url: '/favicon.ico' }
+      { url: '/cupidbox-logo.svg?v=new', type: 'image/svg+xml' },
+      { url: '/favicon.ico?v=new' }
     ]
   }
 };

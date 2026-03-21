@@ -199,8 +199,9 @@ export default function Home() {
           <div className="text-slate-500 font-medium text-sm text-center md:text-left">
             © {new Date().getFullYear()} CupidBox. All rights reserved.
           </div>
-          <div className="flex gap-6">
-            <a href="https://instagram.com/cupidbox.love" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-[#F75EBD] transition-colors hover:-translate-y-0.5 duration-300">Contact Us (Instagram)</a>
+          <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-6 mt-4 md:mt-0">
+            <a href="mailto:cupidbox.love@gmail.com" className="text-slate-400 hover:text-[#F75EBD] transition-colors hover:-translate-y-0.5 duration-300">cupidbox.love@gmail.com</a>
+            <a href="https://instagram.com/cupidbox.love" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-[#F75EBD] transition-colors hover:-translate-y-0.5 duration-300">Instagram</a>
           </div>
         </div>
       </footer>
